@@ -6,7 +6,7 @@ import desktop from "../assets/img/dev/desktop.png";
 
 import Offers from "./offers";
 
-export default function Home () {
+export default function Main () {
 
     return (
         <Background>

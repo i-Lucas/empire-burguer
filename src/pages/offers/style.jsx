@@ -1,41 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-export default function Offers() {
-    return (
-        <OffersContainer>
-            <OffersTitleContainer>
-                <TitleContent>
-
-                </TitleContent>
-            </OffersTitleContainer>
-            <OffersContentContainer>
-
-                <MainOffer>
-                </MainOffer>
-                <Secondary>
-                    <SecondaryBox />
-                    <SecondaryBox />
-                </Secondary>
-
-            </OffersContentContainer>
-            <OffersFooterContainer>
-                <OpeningHoursContainer>
-                    <OpeningHoursBox>
-
-                    </OpeningHoursBox>
-                </OpeningHoursContainer>
-                <FollowInstaContainer>
-                    <FollowInstaBox>
-
-                    </FollowInstaBox>
-                </FollowInstaContainer>
-            </OffersFooterContainer>
-        </OffersContainer>
-    )
-};
-
-const OffersContainer = styled.section`
+export const OffersContainer = styled.section`
 
     width: 65%;
     height: 100%;
@@ -60,14 +25,14 @@ const OffersContainer = styled.section`
 
 // -------------------------------- >> title
 
-const OffersTitleContainer = styled.section`
+export const OffersTitleContainer = styled.section`
 
     display: flex;
     justify-content: center;
     align-items: flex-end;
 `;
 
-const TitleContent = styled.section`
+export const TitleContent = styled.section`
 
     width: 80%;
     height: 40%;
@@ -81,7 +46,7 @@ const TitleContent = styled.section`
 
 // -------------------------------- >> main content
 
-const OffersContentContainer = styled.section`
+export const OffersContentContainer = styled.section`
 
     width: 80%;
     height: 100%;
@@ -95,7 +60,7 @@ const OffersContentContainer = styled.section`
     }
 `;
 
-const MainOffer = styled.section`
+export const MainOffer = styled.section`
 
     width: 66%;
     height: 100%;
@@ -107,7 +72,7 @@ const MainOffer = styled.section`
     }
 `;
 
-const Secondary = styled.section`
+export const Secondary = styled.section`
 
     width: 34%;
     height: 100%;
@@ -118,7 +83,7 @@ const Secondary = styled.section`
     }
 `;
 
-const SecondaryBox = styled.section`
+export const SecondaryBox = styled.section`
 
     width: 100%;
     height: 50%;
@@ -127,7 +92,7 @@ const SecondaryBox = styled.section`
 
 // -------------------------------- >> footer
 
-const OffersFooterContainer = styled.section`
+export const OffersFooterContainer = styled.section`
 
     display: flex;
 
@@ -138,7 +103,7 @@ const OffersFooterContainer = styled.section`
 
 // -------------------------------- >> opening hours
 
-const OpeningHoursContainer = styled.section`
+export const OpeningHoursContainer = styled.section`
 
     width: 50%;
     height: 100%;
@@ -152,7 +117,7 @@ const OpeningHoursContainer = styled.section`
     }
 `;
 
-const OpeningHoursBox = styled.section`
+export const OpeningHoursBox = styled.section`
 
     width: 74%;
     height: 53%;
@@ -170,7 +135,7 @@ const OpeningHoursBox = styled.section`
 
 // -------------------------------- >> follow insta
 
-const FollowInstaContainer = styled.section`
+export const FollowInstaContainer = styled.section`
 
     width: 50%;
     height: 100%;
@@ -184,7 +149,7 @@ const FollowInstaContainer = styled.section`
     }
 `;
 
-const FollowInstaBox = styled.section`
+export const FollowInstaBox = styled.section`
 
     width: 50%;
     height: 35%;
