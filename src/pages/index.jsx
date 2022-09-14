@@ -5,6 +5,7 @@ import mobile from "../assets/img/dev/mobile.png";
 import desktop from "../assets/img/dev/desktop.png";
 
 import Offers from "./offers";
+import Banner from "./banner";
 
 export default function Main () {
 
@@ -25,13 +26,13 @@ const Background = styled.div`
     with: 100%;
     height: 500vh;
 
-    background-image: url(${desktop});
+    // background-image: url(${desktop});
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
     @media screen and (max-width: 768px) {
         height: 700vh;
-        background-image: url(${mobile});
+        // background-image: url(${mobile});
     }
 
     display: grid;
@@ -40,13 +41,6 @@ const Background = styled.div`
     @media screen and (max-width: 768px) {
         grid-template-rows: 14% 22.1% 21.3% 10.4% 21.5% 10.8%;
     }
-`;
-
-
-const Banner = styled.section`
-
-    // background-color: tomato;
-    border: 2px solid black;
 `;
 
 const Menu = styled.section`
