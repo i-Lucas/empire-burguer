@@ -6,6 +6,7 @@ import desktop from "../assets/img/dev/desktop.png";
 
 import Offers from "./offers";
 import Banner from "./banner";
+import Menu from "./menu";
 
 export default function Main () {
 
@@ -32,7 +33,7 @@ const Background = styled.div`
 
     @media screen and (max-width: 768px) {
         height: 700vh;
-        // background-image: url(${mobile});
+        background-image: url(${mobile});
     }
 
     display: grid;
@@ -41,11 +42,6 @@ const Background = styled.div`
     @media screen and (max-width: 768px) {
         grid-template-rows: 14% 22.1% 21.3% 10.4% 21.5% 10.8%;
     }
-`;
-
-const Menu = styled.section`
-
-    border: 1px solid blue;
 `;
 
 const Publications = styled.section`

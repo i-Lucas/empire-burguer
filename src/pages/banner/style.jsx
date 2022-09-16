@@ -70,6 +70,7 @@ export const H3 = styled.h3`
     font-size: clamp(1.2vw, 1.2vw, 1.2vw);
 
     span {
+        padding: 1px 5px 1px 5px;
         border-radius: 5px;
         background-color: #F59A1B;
     }

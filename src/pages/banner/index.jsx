@@ -61,7 +61,7 @@ export default function Banner() {
                     <H5>KING <span>BURGUER</span></H5>
                 </TitleBox>
                 <TitleBox >
-                    <H3>Para quem tem <span>⠀Apetide de um REI !⠀</span></H3>
+                    <H3>Para quem tem <span>Apetide de um REI !</span></H3>
                 </TitleBox>
                 <TitleBox >
                     <BannerButton>
