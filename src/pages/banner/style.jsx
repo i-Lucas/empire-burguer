@@ -8,8 +8,6 @@ import mobile from "../../assets/img/banners/main-mob.png";
 export const BannerContainer = styled.section`
 
     position: relative;
-    border: 2px solid black;
-    
     background-image: url(${desktop});
     background-repeat: no-repeat;
     background-position: center;
