@@ -47,7 +47,7 @@ export default function Banner() {
                         <WhatsContaner>
                             <Button>
                                 <IconsLogo img={whats} size="60%" disabled={true} />
-                                <H1 disabled={true} >Contato</H1>
+                                <H1 disabled={true} special={true}>Contato</H1>
                             </Button>
                         </WhatsContaner>
                     </Contact>

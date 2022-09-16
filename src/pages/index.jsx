@@ -33,7 +33,7 @@ const Background = styled.div`
 
     @media screen and (max-width: 768px) {
         height: 700vh;
-        background-image: url(${mobile});
+        // background-image: url(${mobile});
     }
 
     display: grid;

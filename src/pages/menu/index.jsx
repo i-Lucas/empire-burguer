@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+import desktop from "../../assets/img/banners/burguer-desk.png";
+import mobile from "../../assets/img/banners/burguer-mobile.png";
+
 export default function Menu() {
 
     return (
@@ -49,6 +52,15 @@ const BurguerContainer = styled.section`
 
     grid-area: burguer;
     position: relative;
+
+    background-image: url(${desktop});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 768px) {
+        background-image: url(${mobile});
+    }
 `;
 
 const TitleContent = styled.section`
@@ -164,8 +176,7 @@ const H3 = styled.h3`
 
 const ContentContainer = styled.section`
 
-    // background-color: salmon;
-    border: 3px solid red;
+    background-color: #3B200B;
     grid-area: menu;
 `;
 

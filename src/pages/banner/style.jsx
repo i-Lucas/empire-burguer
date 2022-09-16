@@ -2,10 +2,22 @@ import styled from "styled-components";
 
 import logo from "../../assets/img/icons/logo.svg";
 
+import desktop from "../../assets/img/banners/main-desk.png";
+import mobile from "../../assets/img/banners/main-mob.png";
+
 export const BannerContainer = styled.section`
 
     position: relative;
     border: 2px solid black;
+    
+    background-image: url(${desktop});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 768px) {
+        background-image: url(${mobile});
+    }
 `;
 
 export const TitleContainer = styled.section`
@@ -92,6 +104,10 @@ export const BannerButton = styled.section`
     justify-content: center;
     align-items: center;
 
+    &:hover {
+        transform: scale(1.02);
+    }
+
     @media screen and (max-width: 768px) {
         width: 45%;
     }
@@ -159,7 +175,7 @@ export const Logo = styled.section`
 
 export const Menu = styled.section`
 
-    width: 40%;
+    width: 48%;
     display: flex;
 
     @media screen and (max-width: 768px) {
@@ -170,15 +186,17 @@ export const Menu = styled.section`
 export const Box = styled.section`
 
     display: flex;
+    align-items: center;
     width: calc(100% / 5);
     justify-content: center;
-    align-items: center;
 `;
 
 export const H1 = styled.h1`
 
     cursor: pointer;
+    font-family: 'Lato';    
     font-size: clamp(1vw, 1vw, 1vw);
+    color: ${props => props.special ? "#000000" : "#635352"};
 
     &:hover {
         transform: ${props => props.disabled ? "" : "scale(1.1)"};
@@ -209,8 +227,8 @@ export const IconsLogo = styled.section`
     width: 30%;
     height: 100%;
     cursor: pointer;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: ${props => props.size};
     background-image: url(${props => props.img});
 
@@ -225,8 +243,8 @@ export const WhatsContaner = styled.section`
 
     width: 48%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 `;
 
 export const Button = styled.section`
@@ -238,8 +256,8 @@ export const Button = styled.section`
     background-color: #F59A1B;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     &:hover {
         transform: scale(1.05);
