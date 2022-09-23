@@ -97,13 +97,13 @@ export const H1 = styled.h1`
 export const ContentBox = styled.section`
 
     width: 95%;
-    margin: 2px auto;
+    margin: 3px auto;
     display: flex;
     cursor: pointer;
     border-radius: 10px;
-    height: calc(100% / 4);
+    height: calc(100% / 5);
     background-color: #FFFFFF;
-    box-shadow: 0px 4px 40px rgba(179, 155, 132, 0.5);
+    box-shadow: 0px 4px 40px rgba(179, 155, 132, 0.3);
 
     &:hover {
         transform: scale(1.01);
@@ -114,7 +114,7 @@ export const Icon = styled.section`
 
     width: 25%;
     height: 100%;
-    background-size: 80% 80%;
+    background-size: 75% 75%;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(${props => props.img});
