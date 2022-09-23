@@ -1,9 +1,6 @@
 import React from "react";
 
-import whatsapp from "../../assets/img/icons/whatsapp.svg";
-import ifood from "../../assets/img/icons/ifoode.svg";
-import dessert from "../../assets/img/icons/dessert.svg";
-import delivery from "../../assets/img/icons/delivery.svg";
+import content from "./data";
 
 import {
 
@@ -38,13 +35,6 @@ import {
 
 export default function Deliveries() {
 
-    const content = [
-        { img: whatsapp, title: "Whatsapp", subtitle: "Vamos direto ao ponto, sem perder tempo!" },
-        { img: delivery, title: "Entrega", subtitle: "Entregamos menos de 45 minutos na porta da sua casa!" },
-        { img: dessert, title: "Sobremesa", subtitle: "Pedidos acima de 100 reais, ganham brindes!" },
-        { img: ifood, title: "Ifood", subtitle: "Nossa loja é Top 1 da região !" }
-    ];
-
     return (
         <DeliveriesContainer>
             <CentralContainer>
@@ -53,22 +43,10 @@ export default function Deliveries() {
                     <PhoneBackground />
                     <DeliveriesContent>
                         <MainContent>
-                            <Title><H1>Nossas Entregas</H1></Title>
-                            {content.map((element, index) => {
-                                return (
-                                    <ContentBox key={index}>
-                                        <Icon img={element.img} />
-                                        <Content>
-                                            <ContentTitle>
-                                                <H1 small={true}>{element.title}</H1>
-                                            </ContentTitle>
-                                            <ContentSubtitle>
-                                                <H2>{element.subtitle}</H2>
-                                            </ContentSubtitle>
-                                        </Content>
-                                    </ContentBox>
-                                )
-                            })}
+                            <Title>
+                                <H1>Nossas Entregas</H1>
+                            </Title>
+                            <RenderContent />
                         </MainContent>
                     </DeliveriesContent>
                 </ContentContainer>
@@ -94,5 +72,22 @@ export default function Deliveries() {
 
             </CentralContainer>
         </DeliveriesContainer>
+    )
+};
+
+function RenderContent() {
+
+    return content.map(({ img, title, subtitle }, index) =>
+        <ContentBox key={index}>
+            <Icon img={img} />
+            <Content>
+                <ContentTitle>
+                    <H1 small={true}>{title}</H1>
+                </ContentTitle>
+                <ContentSubtitle>
+                    <H2>{subtitle}</H2>
+                </ContentSubtitle>
+            </Content>
+        </ContentBox>
     )
 };
