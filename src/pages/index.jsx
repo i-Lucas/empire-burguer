@@ -7,6 +7,7 @@ import desktop from "../assets/img/dev/desktop.png";
 import Offers from "./offers";
 import Banner from "./banner";
 import Menu from "./menu";
+import Deliveries from "./delivery";
 
 export default function Main () {
 
@@ -47,11 +48,6 @@ const Background = styled.div`
 const Publications = styled.section`
 
     border: 1px solid black;
-`;
-
-const Deliveries = styled.section`
-
-    border: 1px solid red;
 `;
 
 const Location = styled.section`
