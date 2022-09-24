@@ -8,6 +8,7 @@ import Offers from "./offers";
 import Banner from "./banner";
 import Menu from "./menu";
 import Deliveries from "./delivery";
+import Publications from "./publications";
 
 export default function Main () {
 
@@ -43,11 +44,6 @@ const Background = styled.div`
     @media screen and (max-width: 768px) {
         grid-template-rows: 14% 22.1% 21.3% 10.4% 21.5% 10.8%;
     }
-`;
-
-const Publications = styled.section`
-
-    border: 1px solid black;
 `;
 
 const Location = styled.section`
