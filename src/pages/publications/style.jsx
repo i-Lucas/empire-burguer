@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import desktop from "../../assets/img/banners/publications.png";
 import mobile from "../../assets/img/banners/publications-mobile.png";
 
@@ -120,9 +119,10 @@ export const ReportContent = styled.section`
     height: 65%;
     display: flex;
     line-height: 14px;
+    padding: 10px 10px 0 10px;
     align-items: center;
-    padding: 0 10px 0 10px;
     justify-content: center;
+    text-align: center;
 `;
 
 export const UserProfile = styled.section`
@@ -139,11 +139,9 @@ export const Picture = styled.section`
 
     display: flex;
     justify-content: center;
-    align-items: center;
 
     img {
-        width: 70%;
-        height: 90%;
+        height: 95%;
         border-radius: 50%;
     }
 `;
