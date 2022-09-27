@@ -74,7 +74,8 @@ export default function Publications() {
     };
 
     return (
-        <PublicationsContainer>
+
+        <PublicationsContainer id="publications">
 
             <MainContent>
                 <CentralContainer>

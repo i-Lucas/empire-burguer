@@ -31,7 +31,7 @@ import offer2 from "../../assets/img/offers/offer2.png";
 export default function Offers() {
 
     return (
-        <OffersContainer>
+        <OffersContainer id={"offers"}>
             <OffersTitleContainer>
                 <TitleContent>
                     <H1>Ofertas Especiais</H1>

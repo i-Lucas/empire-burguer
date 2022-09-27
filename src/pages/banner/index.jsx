@@ -26,18 +26,23 @@ import ifood from "../../assets/img/icons/ifood.svg";
 import insta from "../../assets/img/icons/insta.svg";
 import whats from "../../assets/img/icons/whats.svg";
 
-export default function Banner() {
+import scrollTo from "../../services/scroll";
+import Modal from "../../components/modal";
+
+export default function Banner({ modal }) {
+
     return (
-        <BannerContainer>
+        <BannerContainer id={"home"}>
+            {modal.isOpen && <Modal props={modal} />}
             <HeaderContainer>
                 <HeaderContent>
                     <Logo />
                     <Menu >
-                        <Box><H1>Home</H1></Box>
-                        <Box><H1>Promoção</H1></Box>
-                        <Box><H1>Cardapio</H1></Box>
-                        <Box><H1>Comentarios</H1></Box>
-                        <Box><H1>Contato</H1></Box>
+                        <Box><H1 onClick={() => scrollTo("home")}>Início</H1></Box>
+                        <Box><H1 onClick={() => scrollTo("offers")}>Promoções</H1></Box>
+                        <Box><H1 onClick={() => scrollTo("menu")}>Cardápio</H1></Box>
+                        <Box><H1 onClick={() => scrollTo("publications")}>Comentários</H1></Box>
+                        <Box><H1 onClick={() => scrollTo("location")}>Localização</H1></Box>
                     </Menu>
                     <Contact >
                         <Icons>
@@ -45,7 +50,7 @@ export default function Banner() {
                             <IconsLogo img={insta} size="60%" />
                         </Icons>
                         <WhatsContaner>
-                            <Button>
+                            <Button onClick={() => modal.setOpen(true)}>
                                 <IconsLogo img={whats} size="60%" disabled={true} />
                                 <H1 disabled={true} special={true}>Contato</H1>
                             </Button>
@@ -53,22 +58,23 @@ export default function Banner() {
                     </Contact>
                 </HeaderContent>
             </HeaderContainer>
-            <TitleContainer>
-                <TitleBox >
-                    <H2>Uma nova experiência!</H2>
-                </TitleBox>
-                <TitleBox >
-                    <H5>KING <span>BURGUER</span></H5>
-                </TitleBox>
-                <TitleBox >
-                    <H3>Para quem tem <span>Apetide de um REI !</span></H3>
-                </TitleBox>
-                <TitleBox >
-                    <BannerButton>
-                        <H4>Comprar Agora</H4>
-                    </BannerButton>
-                </TitleBox>
-            </TitleContainer>
+            <RenderTitleContainer />
         </BannerContainer>
+    )
+};
+
+function RenderTitleContainer() {
+
+    return (
+        <TitleContainer>
+            <TitleBox ><H2>Uma nova experiência!</H2></TitleBox>
+            <TitleBox ><H5>KING <span>BURGUER</span></H5></TitleBox>
+            <TitleBox ><H3>Para quem tem <span>Apetide de um REI !</span></H3></TitleBox>
+            <TitleBox >
+                <BannerButton>
+                    <H4>Comprar Agora</H4>
+                </BannerButton>
+            </TitleBox>
+        </TitleContainer>
     )
 };

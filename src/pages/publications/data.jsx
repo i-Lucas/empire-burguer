@@ -1,4 +1,4 @@
-const picture = "https:avatars.githubusercontent.com/u/93502599?s=400&u=42f1ba18e5c845b3e49b7fbdb7bbc06bfdf1af4b&v=4";
+import picture from "../../assets/img/dev/eu.png";
 
 const data = [
     { name: "Nélia Melo", picture, date: "23/07/22", report: "É simplesmente o hambúrguer mais gostoso que já comi" },
