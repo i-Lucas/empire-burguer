@@ -67,7 +67,7 @@ const ModalContainer = styled.section`
 
 const ModalBox = styled.section`
 
-    width: 50%;
+    min-width: 50%;
     height: 15%;
     margin-top: 5%;
     border-radius: 10px;
