@@ -45,7 +45,7 @@ export default function Menu() {
                         <H1>Escolha o seu combo imperial, <span>peça agora!</span></H1>
                     </Title>
                     <Subtitle>
-                        <H2>Temos vários tipos de pratos para a nossa realeza, fique esperto porque temos sempre  promoção!</H2>
+                        <H2>Temos vários tipos de pratos para a nossa realeza, fique esperto porque sempre temos promoção!</H2>
                     </Subtitle>
                     <ButtonContainer>
                         <Button>
@@ -71,7 +71,7 @@ export default function Menu() {
                                 <H1>Atendimento <br /><span>personalizado</span></H1>
                             </FooterTitle>
                             <FooterSubtitle>
-                                <H2>Todos os nossos clientes são tratados como rei e rainha, com a nossa colunaria artesanal.</H2>
+                                <H2>Todos os nossos clientes são tratados como rei e rainha com a nossa colunaria artesanal.</H2>
                             </FooterSubtitle>
                             <FooterButton>
                                 <Button>

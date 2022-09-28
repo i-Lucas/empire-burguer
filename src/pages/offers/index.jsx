@@ -36,9 +36,9 @@ export default function Offers() {
                 <TitleContent>
                     <H1>Ofertas Especiais</H1>
                     <H2>
-                        Aproveite todas as nossas ofertas,
-                        fiquem de olhos abertos, porque sempre
-                        estamos mudando o nosso cardapio.
+                        Aproveite todas as nossas ofertas e
+                        fique de olhos abertos porque sempre
+                        estamos mudando o nosso cardápio !
                     </H2>
                 </TitleContent>
             </OffersTitleContainer>
@@ -66,7 +66,7 @@ export default function Offers() {
                                     <H4>Segunda-feira a sexta-feira: 17h00 - 23h00</H4>
                                 </OpeningSubtitle>
                                 <OpeningSubtitle>
-                                    <H4>Sabado a Domíngo: 18h30 - 23h00</H4>
+                                    <H4>Sábado a Domíngo: 18h30 - 23h00</H4>
                                 </OpeningSubtitle>
                             </Wrapper>
                         </OpeningContent>

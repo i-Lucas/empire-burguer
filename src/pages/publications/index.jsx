@@ -94,7 +94,7 @@ export default function Publications() {
                     {!mobile && <RenderSelectPublication />}
                     <BannerTitle>
                         <H1>Publicações do instagram</H1><br />
-                        <H2>Todos os nossos clientes são tratados como rei e rainha, com a nossa colunaria artesanal.</H2>
+                        <H2>Todos os nossos clientes são tratados como rei e rainha, com a nossa culinária artesanal.</H2>
                     </BannerTitle>
                 </TitleContainer>
                 <BackgroundContainer />

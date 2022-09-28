@@ -106,6 +106,10 @@ export const PublicationBox = styled.section`
     background-color: #FFFFFF;
     box-shadow: 0px 4px 25px rgba(60, 35, 13, 0.1);
 
+    &:hover {
+        transform: scale(1.01);
+    }
+
     @media screen and (max-width: 768px) {
         margin-left: 2%;
         height: 85%;

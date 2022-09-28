@@ -69,7 +69,7 @@ function RenderTitleContainer() {
         <TitleContainer>
             <TitleBox ><H2>Uma nova experiência!</H2></TitleBox>
             <TitleBox ><H5>KING <span>BURGUER</span></H5></TitleBox>
-            <TitleBox ><H3>Para quem tem <span>Apetide de um REI !</span></H3></TitleBox>
+            <TitleBox ><H3>Para quem tem <span>Apetite de um REI !</span></H3></TitleBox>
             <TitleBox >
                 <BannerButton>
                     <H4>Comprar Agora</H4>
