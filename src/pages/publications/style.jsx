@@ -118,7 +118,7 @@ export const ReportContent = styled.section`
     width: 100%;
     height: 65%;
     display: flex;
-    line-height: 14px;
+    line-height: 18px;
     padding: 10px 10px 0 10px;
     align-items: center;
     justify-content: center;

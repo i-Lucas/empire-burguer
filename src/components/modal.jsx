@@ -13,7 +13,7 @@ export default function Modal({ props }) {
                 <Content>
                     <H1>Muito obrigado por visitar o <span>Empire Burguer</span> !</H1>
                     <br />
-                    <H1>Desenvolvido por : <span>Lucas Emmanuel</span></H1>
+                    <H1>Desenvolvido por <span>Lucas Emmanuel</span></H1>
                     <br />
                     <H1>Gostaria de dar seu feedback ?</H1>
                     <br />
@@ -79,9 +79,8 @@ const ModalBox = styled.section`
     align-items: center;
 
     @media screen and (max-width: 768px) {
-        margin-top: 25%;
         width: 90%;
-        height: 11%;
+        height: 12%;
     }
 `;
 
