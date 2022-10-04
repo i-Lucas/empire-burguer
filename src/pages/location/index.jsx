@@ -7,6 +7,8 @@ import ifood from "../../assets/img/icons/ifood-footer.svg";
 import desktop from "../../assets/img/banners/location.png";
 import mobile from "../../assets/img/banners/location-mobile.png";
 
+import Maps from "../../services/maps";
+
 import scrollTo from "../../services/scroll";
 
 export default function Location({ modal }) {
@@ -19,7 +21,9 @@ export default function Location({ modal }) {
                 <H2>Estaremos de portas abertas para a nossa realeza.</H2>
             </TitleContainer>
 
-            <Banner />
+            <Banner >
+                <Maps />
+            </Banner>
 
             <FooterContainer>
                 <FooterMenu>
@@ -64,16 +68,10 @@ const TitleContainer = styled.section`
 const Banner = styled.section`
 
     width: 100%;
-    height: 47%;
-
-    background-image: url(${desktop});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 70%;
 
     @media screen and (max-width: 768px) {
         height: 50%;
-        background-image: url(${mobile});
     }
 `;
 
